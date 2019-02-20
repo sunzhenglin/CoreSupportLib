@@ -14,16 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CoreSupportLib (1.1):
+  - CoreSupportLib (1.2):
     - AFNetworking (~> 3.2.1)
-    - CoreSupportLib/CoreCategory (= 1.1)
-    - CoreSupportLib/CoreData (= 1.1)
-    - CoreSupportLib/CoreMacros (= 1.1)
-    - CoreSupportLib/CoreNetworking (= 1.1)
-    - CoreSupportLib/CoreRouter (= 1.1)
-    - CoreSupportLib/CoreTool (= 1.1)
-    - CoreSupportLib/CoreUIKit (= 1.1)
-    - CoreSupportLib/CoreVender (= 1.1)
+    - CoreSupportLib/CoreCategory (= 1.2)
+    - CoreSupportLib/CoreData (= 1.2)
+    - CoreSupportLib/CoreMacros (= 1.2)
+    - CoreSupportLib/CoreNetworking (= 1.2)
+    - CoreSupportLib/CoreRouter (= 1.2)
+    - CoreSupportLib/CoreTool (= 1.2)
+    - CoreSupportLib/CoreUIKit (= 1.2)
+    - CoreSupportLib/CoreVender (= 1.2)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
     - JSONModel (~> 1.4.0)
@@ -37,22 +37,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreCategory (1.1):
-    - AFNetworking (~> 3.2.1)
-    - EBBannerView (~> 1.0.7)
-    - IQKeyboardManager (~> 6.2.0)
-    - JSONModel (~> 1.4.0)
-    - LBXScan (~> 2.3)
-    - Masonry
-    - MJRefresh (~> 3.1.15.7)
-    - ReactiveCocoa (~> 8.0.2)
-    - ReactiveObjC (~> 3.1.0)
-    - SDAutoLayout (~> 2.1.3)
-    - SDWebImage (~> 4.4.3)
-    - SVProgressHUD (~> 2.2.5)
-    - TXAdapter (~> 0.0.2)
-    - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreData (1.1):
+  - CoreSupportLib/CoreCategory (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -67,7 +52,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreMacros (1.1):
+  - CoreSupportLib/CoreData (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -82,7 +67,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreNetworking (1.1):
+  - CoreSupportLib/CoreMacros (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -97,7 +82,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreRouter (1.1):
+  - CoreSupportLib/CoreNetworking (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -112,26 +97,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreTool (1.1):
-    - AFNetworking (~> 3.2.1)
-    - CoreSupportLib/CoreTool/JJImagePicker (= 1.1)
-    - CoreSupportLib/CoreTool/TXCleanCache (= 1.1)
-    - CoreSupportLib/CoreTool/TXImageCompressor (= 1.1)
-    - CoreSupportLib/CoreTool/TXTimer (= 1.1)
-    - EBBannerView (~> 1.0.7)
-    - IQKeyboardManager (~> 6.2.0)
-    - JSONModel (~> 1.4.0)
-    - LBXScan (~> 2.3)
-    - Masonry
-    - MJRefresh (~> 3.1.15.7)
-    - ReactiveCocoa (~> 8.0.2)
-    - ReactiveObjC (~> 3.1.0)
-    - SDAutoLayout (~> 2.1.3)
-    - SDWebImage (~> 4.4.3)
-    - SVProgressHUD (~> 2.2.5)
-    - TXAdapter (~> 0.0.2)
-    - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreTool/JJImagePicker (1.1):
+  - CoreSupportLib/CoreRouter (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -146,7 +112,26 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreTool/TXCleanCache (1.1):
+  - CoreSupportLib/CoreTool (1.2):
+    - AFNetworking (~> 3.2.1)
+    - CoreSupportLib/CoreTool/JJImagePicker (= 1.2)
+    - CoreSupportLib/CoreTool/TXCleanCache (= 1.2)
+    - CoreSupportLib/CoreTool/TXImageCompressor (= 1.2)
+    - CoreSupportLib/CoreTool/TXTimer (= 1.2)
+    - EBBannerView (~> 1.0.7)
+    - IQKeyboardManager (~> 6.2.0)
+    - JSONModel (~> 1.4.0)
+    - LBXScan (~> 2.3)
+    - Masonry
+    - MJRefresh (~> 3.1.15.7)
+    - ReactiveCocoa (~> 8.0.2)
+    - ReactiveObjC (~> 3.1.0)
+    - SDAutoLayout (~> 2.1.3)
+    - SDWebImage (~> 4.4.3)
+    - SVProgressHUD (~> 2.2.5)
+    - TXAdapter (~> 0.0.2)
+    - TXModel (~> 1.0.1)
+  - CoreSupportLib/CoreTool/JJImagePicker (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -161,7 +146,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreTool/TXImageCompressor (1.1):
+  - CoreSupportLib/CoreTool/TXCleanCache (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -176,7 +161,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreTool/TXTimer (1.1):
+  - CoreSupportLib/CoreTool/TXImageCompressor (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -191,28 +176,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit (1.1):
-    - AFNetworking (~> 3.2.1)
-    - CoreSupportLib/CoreUIKit/CWCarourse (= 1.1)
-    - CoreSupportLib/CoreUIKit/LBScan (= 1.1)
-    - CoreSupportLib/CoreUIKit/TXPassWordView (= 1.1)
-    - CoreSupportLib/CoreUIKit/TXuseRuleView (= 1.1)
-    - CoreSupportLib/CoreUIKit/WSDaePickerView (= 1.1)
-    - CoreSupportLib/CoreUIKit/YBPopupMenu (= 1.1)
-    - EBBannerView (~> 1.0.7)
-    - IQKeyboardManager (~> 6.2.0)
-    - JSONModel (~> 1.4.0)
-    - LBXScan (~> 2.3)
-    - Masonry
-    - MJRefresh (~> 3.1.15.7)
-    - ReactiveCocoa (~> 8.0.2)
-    - ReactiveObjC (~> 3.1.0)
-    - SDAutoLayout (~> 2.1.3)
-    - SDWebImage (~> 4.4.3)
-    - SVProgressHUD (~> 2.2.5)
-    - TXAdapter (~> 0.0.2)
-    - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit/CWCarourse (1.1):
+  - CoreSupportLib/CoreTool/TXTimer (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -227,7 +191,28 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit/LBScan (1.1):
+  - CoreSupportLib/CoreUIKit (1.2):
+    - AFNetworking (~> 3.2.1)
+    - CoreSupportLib/CoreUIKit/CWCarourse (= 1.2)
+    - CoreSupportLib/CoreUIKit/LBScan (= 1.2)
+    - CoreSupportLib/CoreUIKit/TXPassWordView (= 1.2)
+    - CoreSupportLib/CoreUIKit/TXuseRuleView (= 1.2)
+    - CoreSupportLib/CoreUIKit/WSDaePickerView (= 1.2)
+    - CoreSupportLib/CoreUIKit/YBPopupMenu (= 1.2)
+    - EBBannerView (~> 1.0.7)
+    - IQKeyboardManager (~> 6.2.0)
+    - JSONModel (~> 1.4.0)
+    - LBXScan (~> 2.3)
+    - Masonry
+    - MJRefresh (~> 3.1.15.7)
+    - ReactiveCocoa (~> 8.0.2)
+    - ReactiveObjC (~> 3.1.0)
+    - SDAutoLayout (~> 2.1.3)
+    - SDWebImage (~> 4.4.3)
+    - SVProgressHUD (~> 2.2.5)
+    - TXAdapter (~> 0.0.2)
+    - TXModel (~> 1.0.1)
+  - CoreSupportLib/CoreUIKit/CWCarourse (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -242,7 +227,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit/TXPassWordView (1.1):
+  - CoreSupportLib/CoreUIKit/LBScan (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -257,7 +242,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit/TXuseRuleView (1.1):
+  - CoreSupportLib/CoreUIKit/TXPassWordView (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -272,7 +257,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit/WSDaePickerView (1.1):
+  - CoreSupportLib/CoreUIKit/TXuseRuleView (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -287,7 +272,7 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreUIKit/YBPopupMenu (1.1):
+  - CoreSupportLib/CoreUIKit/WSDaePickerView (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -302,7 +287,22 @@ PODS:
     - SVProgressHUD (~> 2.2.5)
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - CoreSupportLib/CoreVender (1.1):
+  - CoreSupportLib/CoreUIKit/YBPopupMenu (1.2):
+    - AFNetworking (~> 3.2.1)
+    - EBBannerView (~> 1.0.7)
+    - IQKeyboardManager (~> 6.2.0)
+    - JSONModel (~> 1.4.0)
+    - LBXScan (~> 2.3)
+    - Masonry
+    - MJRefresh (~> 3.1.15.7)
+    - ReactiveCocoa (~> 8.0.2)
+    - ReactiveObjC (~> 3.1.0)
+    - SDAutoLayout (~> 2.1.3)
+    - SDWebImage (~> 4.4.3)
+    - SVProgressHUD (~> 2.2.5)
+    - TXAdapter (~> 0.0.2)
+    - TXModel (~> 1.0.1)
+  - CoreSupportLib/CoreVender (1.2):
     - AFNetworking (~> 3.2.1)
     - EBBannerView (~> 1.0.7)
     - IQKeyboardManager (~> 6.2.0)
@@ -372,7 +372,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CoreSupportLib: f7a49e342fb32cd5bc551ccd9c9f4b33263a7b5c
+  CoreSupportLib: 816d3b34a48c39fae4087387590b1b0c82b7956f
   EBBannerView: b3e2460bc97fb068af915263b696200a03680ab9
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   JSONModel: 11b2dd1ce0a0607f503cce17445f43f9b177b8a3
@@ -390,6 +390,6 @@ SPEC CHECKSUMS:
   TXModel: 116bca2566ae582e273af09448af4a617b1bf050
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 8ebe1921f03f1791651fa391d0a5a98b6c8fc391
+PODFILE CHECKSUM: 02ceeb63735b045febd8d26acfd7e45b78d6596b
 
 COCOAPODS: 1.6.0

@@ -1,6 +1,6 @@
 {
   "name": "CoreSupportLib",
-  "version": "1.1",
+  "version": "1.2",
   "summary": "A short description of CoreSupportLib.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sunzhenglin/CoreSupportLib",
@@ -13,12 +13,13 @@
   },
   "source": {
     "git": "https://github.com/sunzhenglin/CoreSupportLib.git",
-    "tag": "1.1"
+    "tag": "1.2"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "CoreSupportLib/Classes/**/*",
+  "public_header_files": "CoreSupportLib/Classes/*.h",
   "dependencies": {
     "AFNetworking": [
       "~> 3.2.1"

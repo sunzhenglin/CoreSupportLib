@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreSupportLib'
-  s.version          = '1.1'
+  s.version          = '1.3.2'
   s.summary          = 'A short description of CoreSupportLib.'
 
 # This description is used to generate tags and improve search results.
@@ -30,71 +30,50 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'CoreSupportLib/Classes/**/*'
+  s.source_files = 'CoreSupportLib/Classes/*.{h,m}'
   
   # s.resource_bundles = {
   #   'CoreSupportLib' => ['CoreSupportLib/Assets/*.png']
   # }
 
-   s.public_header_files = 'CoreSupportLib/Classes/CoreSupport.h'
+   s.public_header_files = 'CoreSupportLib/Classes/*.h'
+ 
   #----------文件分级----------#
     s.subspec 'CoreCategory' do |ss|
-    ss.source_files = 'CoreSupport/Classes/CoreCategory/*'
+      ss.source_files = 'CoreSupport/Classes/CoreCategory/*.{h,m}'
     end
     s.subspec 'CoreData' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreData/*'
+      ss.source_files = 'CoreSupport/Classes/CoreData/*.{h,m}'
     end
     s.subspec 'CoreMacros' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreMacros/*'
+      ss.source_files = 'CoreSupport/Classes/CoreMacros/*.{h,m}'
     end
     s.subspec 'CoreNetworking' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreNetworking/*'
+      ss.source_files = 'CoreSupport/Classes/CoreNetworking/*.{h,m}'
     end
     s.subspec 'CoreRouter' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreRouter/*'
+      ss.source_files = 'CoreSupport/Classes/CoreRouter/*.{h,m}'
     end
     s.subspec 'CoreTool' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreTool/*'
+      ss.source_files = 'CoreSupport/Classes/CoreTool/*.{h,m}'
       #----------文件分级2----------#
       ss.subspec 'JJImagePicker' do |sss|
-        sss.source_files = 'CoreSupport/Classes/CoreTool/JJImagePicker/*'
+        sss.source_files = 'CoreSupport/Classes/CoreTool/JJImagePicker/*.{h,m}'
       end
       ss.subspec 'TXCleanCache' do |sss|
-        sss.source_files = 'CoreSupport/Classes/CoreTool/TXCleanCache/*'
+        sss.source_files = 'CoreSupport/Classes/CoreTool/TXCleanCache/*.{h,m}'
       end
       ss.subspec 'TXImageCompressor' do |sss|
-        sss.source_files = 'CoreSupport/Classes/CoreTool/TXImageCompressor/*'
+        sss.source_files = 'CoreSupport/Classes/CoreTool/TXImageCompressor/*.{h,m}'
       end
       ss.subspec 'TXTimer' do |sss|
-        sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXTimer/*'
+        sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXTimer/*.{h,m}'
       end
       
     end
-    s.subspec 'CoreUIKit' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreUIKit/*'
-        #----------文件分级2----------#
-          ss.subspec 'CWCarourse' do |sss|
-            sss.source_files = 'CoreSupport/Classes/CoreUIKit/CWCarousel/*'
-            end
-          ss.subspec 'LBScan' do |sss|
-            sss.source_files = 'CoreSupport/Classes/CoreUIKit/LBScan/*'
-          end
-          ss.subspec 'TXPassWordView' do |sss|
-            sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXPassWordView/*'
-          end
-          ss.subspec 'TXuseRuleView' do |sss|
-            sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXuseRuleView/*'
-          end
-          ss.subspec 'WSDaePickerView' do |sss|
-            sss.source_files = 'CoreSupport/Classes/CoreUIKit/WSDaePickerView/*'
-          end
-          ss.subspec 'YBPopupMenu' do |sss|
-            sss.source_files = 'CoreSupport/Classes/CoreUIKit/YBPopupMenu/*'
-          end
-          
-    end
+   
     s.subspec 'CoreVender' do |ss|
-      ss.source_files = 'CoreSupport/Classes/CoreVender/*'
+      ss.source_files = 'CoreSupport/Classes/CoreVender/*.{h,m}'
     end
  
  

@@ -6,14 +6,14 @@
 //  Copyright © 2018年 zhangxiong. All rights reserved.
 //
 
-#ifndef CoreSupport_h
-#define CoreSupport_h
-#import "CoreVenderConfig.h"
+
+
 #import "CoreCategoryConfig.h"
 #import "CoreMacrosConfig.h"
 #import "CoreRouterConfig.h"
-#import "CoreUIKitConfig.h"
+ 
 #import "CoreToolConfig.h"
 #import "CoreDataConfig.h"
 #import "CoreNetworkingConfig.h"
-#endif /* CoreSupport_h */
+#import "CoreVenderConfig.h"
+

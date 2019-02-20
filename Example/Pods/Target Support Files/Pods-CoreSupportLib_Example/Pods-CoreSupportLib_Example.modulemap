@@ -1,4 +1,4 @@
-framework module Pods_CoreSupportLib_Example {
+module Pods_CoreSupportLib_Example {
   umbrella header "Pods-CoreSupportLib_Example-umbrella.h"
 
   export *

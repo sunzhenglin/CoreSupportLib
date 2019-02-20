@@ -7,11 +7,14 @@
 //
 
 #import "KLAppDelegate.h"
+#import "CoreSupport.h"
 
 @implementation KLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *str =@"";
+    [str tx_isValidString];
     // Override point for customization after application launch.
     return YES;
 }
