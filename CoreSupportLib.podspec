@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'CoreSupportLib' => ['CoreSupportLib/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'CoreSupportLib/Classes/CoreSupport.h'
   #----------文件分级----------#
     s.subspec 'CoreCategory' do |ss|
     ss.source_files = 'CoreSupport/Classes/CoreCategory/*'
