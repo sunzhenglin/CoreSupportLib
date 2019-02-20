@@ -1,9 +1,9 @@
 # CoreSupportLib
 
 [![CI Status](https://img.shields.io/travis/acct<blob>=0xE7A9BAE781B5E699BAE883BD/CoreSupportLib.svg?style=flat)](https://travis-ci.org/acct<blob>=0xE7A9BAE781B5E699BAE883BD/CoreSupportLib)
-[![Version](https://img.shields.io/cocoapods/v/CoreSupportLib.svg?style=flat)](https://cocoapods.org/pods/CoreSupportLib)
+[![1.1](https://img.shields.io/cocoapods/v/CoreSupportLib.svg?style=flat)](https://cocoapods.org/pods/CoreSupportLib)
 [![License](https://img.shields.io/cocoapods/l/CoreSupportLib.svg?style=flat)](https://cocoapods.org/pods/CoreSupportLib)
-[![Platform](https://img.shields.io/cocoapods/p/CoreSupportLib.svg?style=flat)](https://cocoapods.org/pods/CoreSupportLib)
+[![iOS 9.0+](https://img.shields.io/cocoapods/p/CoreSupportLib.svg?style=flat)](https://cocoapods.org/pods/CoreSupportLib)
 
 ## Example
 

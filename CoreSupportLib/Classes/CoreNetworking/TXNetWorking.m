@@ -7,7 +7,9 @@
 //
 
 #import "TXNetWorking.h"
-
+ 
+#define TXLog(s, ... ) NSLog( @"<FileName:%@ InThe:%dRow> Log:%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+ 
 @implementation TXNetWorking
 
 /** 网络管理器 */
@@ -51,38 +53,38 @@
     return manager;
 }
 
-/** 开启网络检测 */
-+ (void)openNetworkMonitoring{
-    AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
-    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        switch (status) {
-            case AFNetworkReachabilityStatusUnknown:
-                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusUnknown;
-                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusUnknown];
-                break;
-            case AFNetworkReachabilityStatusNotReachable:
-                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusReachable;
-                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusReachable];
-                break;
-            case AFNetworkReachabilityStatusReachableViaWWAN:
-                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusReachableViaWWAN;
-                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusReachableViaWWAN];
-                break;
-            case AFNetworkReachabilityStatusReachableViaWiFi:
-                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusReachableViaWiFi;
-                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusReachableViaWiFi];
-                break;
-            default:
-                break;
-        }
-    }];
-    [manager startMonitoring];
-}
+///** 开启网络检测 */
+//+ (void)openNetworkMonitoring{
+//    AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
+//    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        switch (status) {
+//            case AFNetworkReachabilityStatusUnknown:
+//                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusUnknown;
+//                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusUnknown];
+//                break;
+//            case AFNetworkReachabilityStatusNotReachable:
+//                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusReachable;
+//                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusReachable];
+//                break;
+//            case AFNetworkReachabilityStatusReachableViaWWAN:
+//                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusReachableViaWWAN;
+//                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusReachableViaWWAN];
+//                break;
+//            case AFNetworkReachabilityStatusReachableViaWiFi:
+//                [TXNetWorking netWorkingManager].networkStatus=NWNetworkStatusReachableViaWiFi;
+//                [self pushNetworkStatusWithNetworkStatus:NWNetworkStatusReachableViaWiFi];
+//                break;
+//            default:
+//                break;
+//        }
+//    }];
+//    [manager startMonitoring];
+//}
 
-/** 网络状态 */
-- (void)setNetworkStatus:(NWNetworkStatus)networkStatus{
-    _networkStatus=networkStatus;
-}
+///** 网络状态 */
+//- (void)setNetworkStatus:(NWNetworkStatus)networkStatus{
+//    _networkStatus=networkStatus;
+//}
 
 /** 推送网络状态 */
 + (void)pushNetworkStatusWithNetworkStatus:(NWNetworkStatus)networkStatus{

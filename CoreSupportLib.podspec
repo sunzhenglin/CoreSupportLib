@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreSupportLib'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'A short description of CoreSupportLib.'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,68 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
+  #----------文件分级----------#
+    s.subspec 'CoreCategory' do |ss|
+    ss.source_files = 'CoreSupport/Classes/CoreCategory/*'
+    end
+    s.subspec 'CoreData' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreData/*'
+    end
+    s.subspec 'CoreMacros' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreMacros/*'
+    end
+    s.subspec 'CoreNetworking' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreNetworking/*'
+    end
+    s.subspec 'CoreRouter' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreRouter/*'
+    end
+    s.subspec 'CoreTool' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreTool/*'
+      #----------文件分级2----------#
+      ss.subspec 'JJImagePicker' do |sss|
+        sss.source_files = 'CoreSupport/Classes/CoreTool/JJImagePicker/*'
+      end
+      ss.subspec 'TXCleanCache' do |sss|
+        sss.source_files = 'CoreSupport/Classes/CoreTool/TXCleanCache/*'
+      end
+      ss.subspec 'TXImageCompressor' do |sss|
+        sss.source_files = 'CoreSupport/Classes/CoreTool/TXImageCompressor/*'
+      end
+      ss.subspec 'TXTimer' do |sss|
+        sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXTimer/*'
+      end
+      
+    end
+    s.subspec 'CoreUIKit' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreUIKit/*'
+        #----------文件分级2----------#
+          ss.subspec 'CWCarourse' do |sss|
+            sss.source_files = 'CoreSupport/Classes/CoreUIKit/CWCarousel/*'
+            end
+          ss.subspec 'LBScan' do |sss|
+            sss.source_files = 'CoreSupport/Classes/CoreUIKit/LBScan/*'
+          end
+          ss.subspec 'TXPassWordView' do |sss|
+            sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXPassWordView/*'
+          end
+          ss.subspec 'TXuseRuleView' do |sss|
+            sss.source_files = 'CoreSupport/Classes/CoreUIKit/TXuseRuleView/*'
+          end
+          ss.subspec 'WSDaePickerView' do |sss|
+            sss.source_files = 'CoreSupport/Classes/CoreUIKit/WSDaePickerView/*'
+          end
+          ss.subspec 'YBPopupMenu' do |sss|
+            sss.source_files = 'CoreSupport/Classes/CoreUIKit/YBPopupMenu/*'
+          end
+          
+    end
+    s.subspec 'CoreVender' do |ss|
+      ss.source_files = 'CoreSupport/Classes/CoreVender/*'
+    end
+ 
+ 
+ 
   # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'AFNetworking', '~> 3.2.1'
     s.dependency 'MJRefresh', '~> 3.1.15.7'

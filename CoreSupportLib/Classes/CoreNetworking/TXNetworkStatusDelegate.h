@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "TXNetWorking.h"
 
-NS_ASSUME_NONNULL_BEGIN
+ 
 
 /** 网络监测通知 */
 FOUNDATION_EXPORT NSString *const TXNetworkMonitoringNotification;
 /** 网络状态Key */
 FOUNDATION_EXPORT NSString *const networkStatusKey;
-
 /** 网络状态 */
 typedef NS_ENUM(NSInteger,NWNetworkStatus){
     /** 未识别的网络*/
@@ -28,12 +27,18 @@ typedef NS_ENUM(NSInteger,NWNetworkStatus){
     NWNetworkStatusReachableViaWiFi =2,
 };
 
+
 @class TXNetworkStatusDelegate;
+
+ 
+
 @protocol TXNetworkStatusDelegate <NSObject>
 @optional
 /** 网络状态 */
 - (void)networkStatusDelegate:(TXNetworkStatusDelegate*)networkStatusDelegate networkStatus:(NWNetworkStatus)networkStatus;
 @end
+
+
 @interface TXNetworkStatusDelegate : NSObject
 /** 代理属性 */
 @property (nonatomic,weak)id <TXNetworkStatusDelegate> delegate;
@@ -41,4 +46,4 @@ typedef NS_ENUM(NSInteger,NWNetworkStatus){
 @property (nonatomic,assign,readonly)NWNetworkStatus networkStatus;
 @end
 
-NS_ASSUME_NONNULL_END
+ 
