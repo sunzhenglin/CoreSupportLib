@@ -1,6 +1,6 @@
 {
   "name": "CoreSupportLib",
-  "version": "1.2",
+  "version": "1.3.3",
   "summary": "A short description of CoreSupportLib.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sunzhenglin/CoreSupportLib",
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/sunzhenglin/CoreSupportLib.git",
-    "tag": "1.2"
+    "tag": "1.3.3"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "CoreSupportLib/Classes/**/*",
-  "public_header_files": "CoreSupportLib/Classes/*.h",
+  "public_header_files": "CoreSupportLib/Classes/CoreSupport.h",
   "dependencies": {
     "AFNetworking": [
       "~> 3.2.1"
@@ -63,83 +63,5 @@
     "SDAutoLayout": [
       "~> 2.1.3"
     ]
-  },
-  "subspecs": [
-    {
-      "name": "CoreCategory",
-      "source_files": "CoreSupport/Classes/CoreCategory/*"
-    },
-    {
-      "name": "CoreData",
-      "source_files": "CoreSupport/Classes/CoreData/*"
-    },
-    {
-      "name": "CoreMacros",
-      "source_files": "CoreSupport/Classes/CoreMacros/*"
-    },
-    {
-      "name": "CoreNetworking",
-      "source_files": "CoreSupport/Classes/CoreNetworking/*"
-    },
-    {
-      "name": "CoreRouter",
-      "source_files": "CoreSupport/Classes/CoreRouter/*"
-    },
-    {
-      "name": "CoreTool",
-      "source_files": "CoreSupport/Classes/CoreTool/*",
-      "subspecs": [
-        {
-          "name": "JJImagePicker",
-          "source_files": "CoreSupport/Classes/CoreTool/JJImagePicker/*"
-        },
-        {
-          "name": "TXCleanCache",
-          "source_files": "CoreSupport/Classes/CoreTool/TXCleanCache/*"
-        },
-        {
-          "name": "TXImageCompressor",
-          "source_files": "CoreSupport/Classes/CoreTool/TXImageCompressor/*"
-        },
-        {
-          "name": "TXTimer",
-          "source_files": "CoreSupport/Classes/CoreUIKit/TXTimer/*"
-        }
-      ]
-    },
-    {
-      "name": "CoreUIKit",
-      "source_files": "CoreSupport/Classes/CoreUIKit/*",
-      "subspecs": [
-        {
-          "name": "CWCarourse",
-          "source_files": "CoreSupport/Classes/CoreUIKit/CWCarousel/*"
-        },
-        {
-          "name": "LBScan",
-          "source_files": "CoreSupport/Classes/CoreUIKit/LBScan/*"
-        },
-        {
-          "name": "TXPassWordView",
-          "source_files": "CoreSupport/Classes/CoreUIKit/TXPassWordView/*"
-        },
-        {
-          "name": "TXuseRuleView",
-          "source_files": "CoreSupport/Classes/CoreUIKit/TXuseRuleView/*"
-        },
-        {
-          "name": "WSDaePickerView",
-          "source_files": "CoreSupport/Classes/CoreUIKit/WSDaePickerView/*"
-        },
-        {
-          "name": "YBPopupMenu",
-          "source_files": "CoreSupport/Classes/CoreUIKit/YBPopupMenu/*"
-        }
-      ]
-    },
-    {
-      "name": "CoreVender",
-      "source_files": "CoreSupport/Classes/CoreVender/*"
-    }
-  ]
+  }
 }
