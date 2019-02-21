@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreSupportLib'
-  s.version          = '1.3.5'
+  s.version          = '1.3.7'
   s.summary          = 'A short description of CoreSupportLib.'
 
 # This description is used to generate tags and improve search results.
