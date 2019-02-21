@@ -8,7 +8,7 @@
 
 #ifndef CoreSupport_h
 #define CoreSupport_h
-#import "CoreVenderConfig.h"
+
 #import "CoreCategoryConfig.h"
 #import "CoreMacrosConfig.h"
 #import "CoreRouterConfig.h"
@@ -16,4 +16,5 @@
 #import "CoreToolConfig.h"
 #import "CoreDataConfig.h"
 #import "CoreNetworkingConfig.h"
+#import "CoreGCDConfig.h"
 #endif /* CoreSupport_h */
