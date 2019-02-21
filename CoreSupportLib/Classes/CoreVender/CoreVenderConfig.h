@@ -25,6 +25,4 @@
 #define LBXScan_Define_ZBar    //包含ZBar库
 #define LBXScan_Define_UI      //包含界面库
 /*TX*/
-#import "TXAdapter.h"
-#import "TXModel.h"
 #endif /* CoreVenderConfig_h */

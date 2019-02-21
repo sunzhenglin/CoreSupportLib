@@ -97,26 +97,14 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/EBBannerView/EBBannerView/Classes/EBBannerView.xib"
-  install_resource "${PODS_ROOT}/EBBannerView/EBBannerView/Classes/EBBannerViewController.xib"
-  install_resource "${PODS_ROOT}/EBBannerView/EBBannerView/Classes/EBMuteDetector.mp3"
-  install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
-  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
-  install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/EBBannerView/EBBannerView/Classes/EBBannerView.xib"
-  install_resource "${PODS_ROOT}/EBBannerView/EBBannerView/Classes/EBBannerViewController.xib"
-  install_resource "${PODS_ROOT}/EBBannerView/EBBannerView/Classes/EBMuteDetector.mp3"
-  install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
-  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
-  install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png"

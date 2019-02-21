@@ -1,1 +1,0 @@
-../../../TXAdapter/TXAdapter/TXAdapter.h
