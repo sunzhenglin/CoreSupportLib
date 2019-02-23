@@ -25,4 +25,5 @@
 #import "UITabBarController+TXKit.h"
 #import "UIViewController+TXKit.h"
 #import "NSBundle+txSubBundle.h"
+#import "UIImage+txSubBundle.h"
 #endif /* CoreCategoryConfig_h */
