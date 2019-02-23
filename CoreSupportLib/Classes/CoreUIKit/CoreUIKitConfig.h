@@ -8,4 +8,10 @@
 
 #ifndef CoreUIKitConfig_h
 #define CoreUIKitConfig_h
+#import "WSDatePickerView.h"
+#import "TXPassWordView.h"
+#import "TXUseRuleView.h"
+#import "TXLBXScan.h"
+#import "CWCarouselHeader.h"
+
 #endif /* CoreUIKitConfig_h */

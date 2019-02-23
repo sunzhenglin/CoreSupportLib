@@ -97,6 +97,7 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/CoreSupportLib/CoreSupportLib.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png"
@@ -105,6 +106,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/CoreSupportLib/CoreSupportLib.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png"
