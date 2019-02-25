@@ -10,6 +10,7 @@
 #define CoreCategoryConfig_h
 /*Foundation*/
 #import "NSString+TXKit.h"
+#import "NSBundle+txSubBundle.h"
 /*UIKit*/
 #import "UITextView+TXKit.h"
 #import "UITextField+TXKit.h"
@@ -25,4 +26,5 @@
 #import "UITabBarController+TXKit.h"
 #import "UIViewController+TXKit.h"
 
+#import "UIImage+txSubBundle.h"
 #endif /* CoreCategoryConfig_h */

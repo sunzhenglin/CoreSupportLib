@@ -13,5 +13,5 @@
 #import "TXUseRuleView.h"
 #import "TXLBXScan.h"
 #import "CWCarouselHeader.h"
-
+#import "YBPopupMenu.h"
 #endif /* CoreUIKitConfig_h */
