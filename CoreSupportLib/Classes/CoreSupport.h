@@ -16,5 +16,4 @@
 #import "CoreToolConfig.h"
 #import "CoreDataConfig.h"
 #import "CoreNetworkingConfig.h"
-#import "CoreGCDConfig.h"
 #endif /* CoreSupport_h */

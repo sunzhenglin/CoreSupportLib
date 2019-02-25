@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker/UILabel+JJImagePicker.h
+../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker(照片选择器)/JJImagePicker/UILabel+JJImagePicker.h

@@ -56,6 +56,30 @@ NSString * const errorCodeTypeKey=@"errorCodeType";
                                      TXErrorCodeTypePermissionDenied|
                                      TXErrorCodeTypeNoNeedToSignIn|
                                      TXErrorCodeTypeNotAPublicHolidayDontLetASubstitute|
+                                     TXErrorCodeTypeTypeNameCannotBeEmpty|
+                                     TXErrorCodeTypeTheNumberOfRecipientsCannotBeEmpty|
+                                     TXErrorCodeTypeUserNotFound|
+                                     TXErrorCodeTypeNoMaterialsFound|
+                                     TXErrorCodeTypeInsufficientRemainingQuantity|
+                                     TXErrorCodeTypeTypeIdCannotBeEmpty|
+                                     TXErrorCodeTypeTypeNotFound|
+                                     TXErrorCodeTypeItemNameCannotBeEmpty|               
+                                     TXErrorCodeTypeProductionDateCannotBeEmpty|
+                                     TXErrorCodeTypeShelfLifeCannotBeEmpty|
+                                     TXErrorCodeTypeInboundTimeCannotBeEmpty|
+                                     TXErrorCodeTypeBasicUnitCannotBeEmpty|
+                                     TXErrorCodeTypeUnitLayerCannotBeEmpty|
+                                     TXErrorCodeTypeTheNumberOfPrintsCannotBeEmpty|
+                                     TXErrorCodeTypeSubmitterCannotBeEmpty|
+                                     TXErrorCodeTypeTheWarehousingStaffCannotBeEmpty|
+                                     TXErrorCodeTypeTheNumberOfUnitsIsIncorrect|
+                                     TXErrorCodeTypeMaterialIdCannotBeEmpty|
+                                     TXErrorCodeTypeDeleteTypeCannotBeEmpty|
+                                     TXErrorCodeTypeMaterialHasBeenDeleted|
+                                     TXErrorCodeTypeProductBarcodeCannotBeEmpty|
+                                     TXErrorCodeTypeTheNumberOfInspectionsHasReachedTheUpperLimit|
+                                     TXErrorCodeTypeShortIntervalFromLastInspection|
+                                     TXErrorCodeTypeTheFakeArticleHasBeenSubmittedAndIsNotOperational|
                                      TXErrorCodeTypeServerError|
                                      TXErrorCodeTypeDataSaveFailed|
                                      TXErrorCodeTypeDataDeletionFailed|
@@ -147,9 +171,57 @@ NSString * const errorCodeTypeKey=@"errorCodeType";
     }else if (errorCodeType==TXErrorCodeTypeNoNeedToSignIn){
         return @"不需要签到";
     }else if (errorCodeType==TXErrorCodeTypeNotAPublicHolidayDontLetASubstitute){
-        return @"不是公假不让代课";
+        return @"事假不能代课";
     }else if (errorCodeType==TXErrorCodeTypeUFaceUserIsAlreadyRegistered){
         return @"Face用户已注册";
+    }else if (errorCodeType==TXErrorCodeTypeTypeNameCannotBeEmpty){
+        return @"类型名称不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeTheNumberOfRecipientsCannotBeEmpty){
+        return @"领用数量不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeUserNotFound){
+        return @"未找到用户";
+    }else if (errorCodeType==TXErrorCodeTypeNoMaterialsFound){
+        return @"未找到物资";
+    }else if (errorCodeType==TXErrorCodeTypeInsufficientRemainingQuantity){
+        return @"剩余数量不足";
+    }else if (errorCodeType==TXErrorCodeTypeTypeIdCannotBeEmpty){
+        return @"类型id不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeTypeNotFound){
+        return @"未找到类型";
+    }else if (errorCodeType==TXErrorCodeTypeItemNameCannotBeEmpty){
+        return @"物品名称不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeProductionDateCannotBeEmpty){
+        return @"生产日期不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeShelfLifeCannotBeEmpty){
+        return @"保质期不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeInboundTimeCannotBeEmpty){
+        return @"入库时间不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeBasicUnitCannotBeEmpty){
+        return @"基本单位不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeUnitLayerCannotBeEmpty){
+        return @"单位层数不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeTheNumberOfPrintsCannotBeEmpty){
+        return @"打印数量不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeSubmitterCannotBeEmpty){
+        return @"提交人员不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeTheWarehousingStaffCannotBeEmpty){
+        return @"入库人员不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeTheNumberOfUnitsIsIncorrect){
+        return @"单位层数有误";
+    }else if (errorCodeType==TXErrorCodeTypeMaterialIdCannotBeEmpty){
+        return @"物资id不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeDeleteTypeCannotBeEmpty){
+        return @"删除类型不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeMaterialHasBeenDeleted){
+        return @"物资已删除";
+    }else if (errorCodeType==TXErrorCodeTypeProductBarcodeCannotBeEmpty){
+        return @"商品条形码不能为空";
+    }else if (errorCodeType==TXErrorCodeTypeTheNumberOfInspectionsHasReachedTheUpperLimit){
+        return @"巡检次数已达上限";
+    }else if (errorCodeType==TXErrorCodeTypeShortIntervalFromLastInspection){
+        return @"与上次巡检时间间隔过短";
+    }else if (errorCodeType==TXErrorCodeTypeTheFakeArticleHasBeenSubmittedAndIsNotOperational){
+        return @"假条已经提交，不可操作";
     }else if (errorCodeType==TXErrorCodeTypeServerError){
         return @"服务器发生错误";
     }else if (errorCodeType==TXErrorCodeTypeDataSaveFailed){

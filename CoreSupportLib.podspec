@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreSupportLib'
-  s.version          = '1.3.8.3'
+  s.version          = '1.3.8.4'
   s.summary          = 'A short description of CoreSupportLib.'
 
 # This description is used to generate tags and improve search results.
@@ -89,23 +89,11 @@ TODO: Add long description of the pod here.
  
   # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'AFNetworking', '~> 3.2.1'
-#    s.dependency 'MJRefresh', '~> 3.1.15.7'
-#    s.dependency 'SDWebImage', '~> 4.4.3'
-     s.dependency 'SVProgressHUD', '~> 2.2.5'
-     s.dependency 'LBXScan', '~> 2.3'
-#    s.dependency 'IQKeyboardManager', '~> 6.2.0'
+    s.dependency 'SVProgressHUD', '~> 2.2.5'
+    s.dependency 'LBXScan', '~> 2.3'
     s.dependency 'TXAdapter', '~> 0.0.2'
-     s.dependency 'TXModel', '~> 1.0.1'
-
-#    s.dependency 'EBBannerView', '~>1.0.7'
- 
-#    s.dependency 'ReactiveCocoa', '~> 8.0.2'
-#    s.dependency 'ReactiveObjC', '~> 3.1.0'
-#    s.dependency 'JSONModel', '~> 1.4.0'
-
-#    s.dependency 'Masonry'
-#    s.dependency 'SDAutoLayout', '~> 2.1.3'
-
+    s.dependency 'TXModel', '~> 1.0.1'
+    
       
           
               

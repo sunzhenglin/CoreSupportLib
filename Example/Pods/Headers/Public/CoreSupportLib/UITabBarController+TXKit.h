@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UITabBarController+TXKit.h
+../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UITabBarController/UITabBarController+TXKit.h

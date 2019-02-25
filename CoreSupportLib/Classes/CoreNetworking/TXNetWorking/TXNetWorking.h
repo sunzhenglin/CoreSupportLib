@@ -26,7 +26,6 @@ typedef NS_ENUM(NSInteger,NWShowHUDType){
     NWShowHUDTypeFailureInfo =4,//失败
 };
 
-
 /**
  网络管理器
  
@@ -48,8 +47,8 @@ typedef NS_ENUM(NSInteger,NWShowHUDType){
 /** 开启网络检测 */
 + (void)openNetworkMonitoring;
 
-///** 网络状态(注意:只用在开启网络检测时可用) */
-//@property (nonatomic,assign,readonly)NWNetworkStatus networkStatus;
+/** 网络状态(注意:只用在开启网络检测时可用) */
+@property (nonatomic,assign,readonly)NWNetworkStatus networkStatus;
 
 /** 网络请求识别码(注意:适用于空灵智能) */
 @property (nonatomic,assign)NSInteger code;

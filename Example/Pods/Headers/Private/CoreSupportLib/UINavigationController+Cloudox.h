@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UINavigationController+Cloudox.h
+../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UINavigationController/UINavigationController+Cloudox.h

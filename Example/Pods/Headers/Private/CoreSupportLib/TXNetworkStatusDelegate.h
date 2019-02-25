@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreNetworking/TXNetworkStatusDelegate.h
+../../../../../CoreSupportLib/Classes/CoreNetworking/TXNetWorking/TXNetworkStatusDelegate.h

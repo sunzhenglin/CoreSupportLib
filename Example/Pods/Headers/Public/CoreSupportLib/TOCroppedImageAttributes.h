@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker/TOCroppedImageAttributes.h
+../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker(照片选择器)/TOCropViewController/Models/TOCroppedImageAttributes.h

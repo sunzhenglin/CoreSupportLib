@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreNetworking/TXNetErrorDelegate.h
+../../../../../CoreSupportLib/Classes/CoreNetworking/TXNetWorking/TXNetErrorDelegate.h

@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UITextField+TXKit.h
+../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UITextField/UITextField+TXKit.h

@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreData/TXUserInfo.h
+../../../../../CoreSupportLib/Classes/CoreData/TXUserData/TXUserInfo.h

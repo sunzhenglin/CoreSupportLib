@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker/TOCropViewController-Bridging-Header.h
+../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker(照片选择器)/TOCropViewController/TOCropViewController-Bridging-Header.h

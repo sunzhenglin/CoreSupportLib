@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreData/TXRongIMUserInfo.h
+../../../../../CoreSupportLib/Classes/CoreData/TXUserData/TXRongIMUserInfo.h

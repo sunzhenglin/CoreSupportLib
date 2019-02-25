@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UINavigationController+TXKit.h
+../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UINavigationController/UINavigationController+TXKit.h

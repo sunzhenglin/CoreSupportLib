@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreNetworking/TXNetWorking.h
+../../../../../CoreSupportLib/Classes/CoreNetworking/TXNetWorking/TXNetWorking.h

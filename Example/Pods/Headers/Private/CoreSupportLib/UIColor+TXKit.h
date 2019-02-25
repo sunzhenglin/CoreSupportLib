@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UIColor+TXKit.h
+../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UIColor/UIColor+TXKit.h

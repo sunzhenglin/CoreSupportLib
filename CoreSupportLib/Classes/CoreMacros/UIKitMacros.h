@@ -22,7 +22,7 @@
 /** 加载资源图片 */
 #define IMAGE(NAME,EXT)        [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
 /** 加载图片 */
-#define IMAGENAMED(NAME)       [UIImage imageNamed:NAME]
+#define IMAGENAME(NAME)       [UIImage imageNamed:NAME]
 /** 字体大小(粗体）*/
 #define BOLDSYSTEMFONT(FONTSIZE) [UIFont boldSystemFontOfSize:FONTSIZE]
 /** 字体大小(常规）*/

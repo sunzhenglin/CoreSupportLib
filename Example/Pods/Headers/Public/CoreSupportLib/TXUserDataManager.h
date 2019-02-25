@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreData/TXUserDataManager.h
+../../../../../CoreSupportLib/Classes/CoreData/TXUserData/TXUserDataManager.h

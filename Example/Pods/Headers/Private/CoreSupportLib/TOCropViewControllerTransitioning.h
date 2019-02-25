@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker/TOCropViewControllerTransitioning.h
+../../../../../CoreSupportLib/Classes/CoreTool/JJImagePicker(照片选择器)/TOCropViewController/Models/TOCropViewControllerTransitioning.h
