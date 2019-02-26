@@ -29,9 +29,20 @@ acct<blob>=0xE7A9BAE781B5E699BAE883BD, 393992811@qq.com
 
 CoreSupportLib is available under the MIT license. See the LICENSE file for more info.
 ## 说明
- [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
-  [NSBundle+txSubBundle UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle-UIImagetxSubBundle)
-### NSString+TXKit
+ 推荐使用
+ * [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
+ * [NSBundle+txSubBundle UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle-UIImagetxSubBundle)
+ * [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
+ * [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
+ * [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
+ * [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
+ * [UIImage+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageTXKit)
+ * [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
+ * [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
+ 其他
+ 
+### 推荐使用
+#### NSString+TXKit
  
 ```
 /** 判断是否是有效的(非空/非空白)字符串 */
@@ -62,20 +73,16 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 
 /**
  *  获取文本的宽度
- *
  *  @param  font    文本字体
  *  @param  height  文本高度
- *
  *  @return 文本宽度
  */
 - (CGFloat)tx_getTextWidth:(UIFont *)font height:(CGFloat)height;
 
 /**
  *  获取文本的高度
- *
  *  @param  font   文本字体
  *  @param  width  文本宽度
- *
  *  @return 文本高度
  */
 - (CGFloat)tx_getTextHeight:(UIFont *)font width:(CGFloat)width;
@@ -137,25 +144,14 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
  ```
  
 
-### UITextView+TXKit
+#### UITextView+TXKit UITextField+TXKit
 ```
-/*UITextView 的最大输入长度*/
+/*设置 UITextView 的最大输入长度*/
 @property (nonatomic,assign)NSInteger inputLimit;
 ```
-
-### UITextField+TXKit
-```
-/*UITextField 的最大输入长度*/
-@property (nonatomic,assign)NSInteger inputLimit;
-```
-
-
-### UIButton+Layout
-```
-@property(nonatomic,assign)CGRect titleRect;
-@property(nonatomic,assign)CGRect imageRect;
-```
-### UIButton+TXKit 与UIButton+Layout比较推荐用这个
+ 
+#### UIButton+TXKit 
+与UIButton+Layout比较推荐用这个
 
 ```
 /**
@@ -167,15 +163,14 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 - (void)tx_layoutButtonWithEdgeInsetsStyle:(TXButtonEdgeInsetsStyle)style
                            imageTitleSpace:(CGFloat)space;
 ```
-### UIImageView+TXKit @过期
-```
-/** 使用 CAShapeLayer 和 UIBezierPath 设置圆角 */
-- (void)tx_setBezierPathCornerRadius:(CGFloat)radius;
 
+
+#### UIImageView+TXKit  
+```
 /** 通过 Graphics 和 BezierPath 设置圆角（推荐用这个）*/
 - (void)tx_setGraphicsCornerRadius:(CGFloat)radius;
 ```
-###  UIImage+TXKit  
+####  UIImage+TXKit  
 ```
 
 /** 显示原图（避免被系统渲染成蓝色） */
@@ -203,30 +198,10 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
                                       borderWidth:(CGFloat)borderWidth
                                       borderColor:(nullable UIColor *)borderColor;
 ```
-### UIView+TXKit
+#### UIView+TXKit
 ```
 /** 返回视图的视图控制器(可能为nil) */
 @property (nullable, nonatomic, readonly) UIViewController *viewController;
-/** left: frame.origin.x */
-@property (nonatomic) CGFloat left;
-/** top: frame.origin.y */
-@property (nonatomic) CGFloat top;
-/** right: frame.origin.x + frame.size.width */
-@property (nonatomic) CGFloat right;
-/** bottom: frame.origin.y + frame.size.height */
-@property (nonatomic) CGFloat bottom;
-/** width: frame.size.width */
-@property (nonatomic) CGFloat width;
-/** height: frame.size.height */
-@property (nonatomic) CGFloat height;
-/** centerX: center.x */
-@property (nonatomic) CGFloat centerX;
-/** centerY: center.y */
-@property (nonatomic) CGFloat centerY;
-/** origin: frame.origin */
-@property (nonatomic) CGPoint origin;
-/** size: frame.size */
-@property (nonatomic) CGSize  size;
 
 /**
  *  设置视图view的部分圆角(绝对布局)
@@ -269,7 +244,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 /** 当前视图控制器 */
 - (UIViewController*)currentViewController;
 ```
-###  UIColor+TXKit
+####  UIColor+TXKit
 ```
 /*
  * 返回当前颜色的r值
@@ -297,45 +272,12 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 + (UIColor *)colorWithHexColorString:(NSString *)hexString;
 
 /*
- * 烟白色(F5F5F5)
+ *             烟白色(F5F5F5) 
+ *     //黄绿色(9ACD32)  艾利斯兰(F0F8FF)  古董白(FAEBD7) 碧绿色(7FFFD4) 米色(F5F5DC) 紫罗兰色(8A2BE2)实木色(DEB887)
  */
-+ (UIColor *)smokeWhiteColor;
-
-/*
- * 黄绿色(9ACD32)
- */
-+ (UIColor *)yellowGreenColor;
-
-/*
- * 艾利斯兰(F0F8FF)
- */
-+ (UIColor *)aliceBlueColor;
-
-/*
- * 古董白(FAEBD7)
- */
-+ (UIColor *)antiqueWhiteColor;
-
-/*
- * 碧绿色(7FFFD4)
- */
-+ (UIColor *)aquaMarineColor;
-
-/*
- * 米色(F5F5DC)
- */
-+ (UIColor *)beigeColor;
-
-/*
- * 紫罗兰色(8A2BE2)
- */
-+ (UIColor *)blueVioletColor;
-
-/*
- * 实木色(DEB887)
- */
-+ (UIColor *)burlyWoodColor;
-
+ + (UIColor *)smokeWhiteColor;
+ //  yellowGreenColor;aliceBlueColor;antiqueWhiteColor;aquaMarineColor;beigeColor;blueVioletColor;burlyWoodColor;
+ 
 /*
  * 随机创建一种颜色
  */
@@ -346,13 +288,9 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
  */
 + (UIColor*)gradientFromColor:(UIColor*)fromColor toColor:(UIColor*)toColor withHeight:(CGFloat)height;
 ```
-### UINavigationController+Cloudox UIViewController+Cloudox
+
+### UIViewController+Cloudox
 ```
-UINavigationController+Cloudox
- /*设置导航栏背景透明度*/
-- (void)setNeedsNavigationBackground:(CGFloat)alpha;
---------
-UIViewController+Cloudox
  /*设置导航栏背景透明度*/
 @property (copy, nonatomic) NSString * navigationAlpha;
 ```
@@ -406,83 +344,7 @@ UIViewController+Cloudox
 /**  获取TabBar高度 */
 - (CGFloat)tabBarHeight;
 ```
-###  TXUserDataManager
-```
 
-/**
- *  功能:用户信息管理器
- *  
- */
-
-#import <Foundation/Foundation.h>
-#import "TXLogInInfo.h"
-#import "TXUserInfo.h"
-#import "TXRongIMUserInfo.h"
-
-/** 移除用户数据类型 */
-typedef NS_ENUM(NSInteger,TXRemoveUserDataType){
-    /** 用户信息 */
-    TXRemoveUserDataTypeUserInfo       =0,
-    /** 登录信息 */
-    TXRemoveUserDataTypeLogInInfo      =1,
-    /** 融云用户信息 */
-    TXRemoveUserDataTypeRongIMUserInfo =2,
-};
-
-/** 设置用户数据类型 */
-typedef NS_ENUM(NSInteger,TXSetUserDataType){
-    /** 用户信息 */
-    TXSetUserDataTypeUserInfo       =0,
-    /** 登录信息 */
-    TXSetUserDataTypeLogInInfo      =1,
-    /** 融云用户信息 */
-    TXSetUserDataTypeRongIMUserInfo =2,
-};
-
-/** 用户数据管理器 */
-@interface TXUserDataManager : NSObject
-/** 用户数据管理器 */
-+ (TXUserDataManager*)userDataManager;
-/** 登录信息 */
-@property(nonatomic,strong)TXLogInInfo *logInInfo;
-/** 用户信息 */
-@property(nonatomic,strong)TXUserInfo *userInfo;
-/** 融云用户信息 */
-@property(nonatomic,strong)TXRongIMUserInfo *rongIMUserInfo;
-
-/**
- *  设置用户数据
- *  @param setUserDataType 设置用户数据类型 (必填)
- *  @param parameters 参数 (必填)
- */
-- (void)setUserDataWithSetUserDataType:(TXSetUserDataType)setUserDataType parameters:(NSDictionary*)parameters;
-
-/**
- *  移除用户数据
- *  @param removeUserDataType 移除用户数据类型 (必填)
- */
-- (void)removeUserData:(TXRemoveUserDataType)removeUserDataType;
-
-/** 移除用户所有数据 */
-- (void)removeUserAllData;
-
-@end
-```
-### TXUserDataDelegate
-```
- TXUserDataChangeDelegate:
-/*登录信息发生改变*/
-- (void)userDataDelegate:(TXUserDataDelegate*)userDataDelegate logInInfoDidChange:(TXLogInInfo*)logInInfo info:(NSDictionary*)info;
-/*用户信息发生改变*/
-- (void)userDataDelegate:(TXUserDataDelegate*)userDataDelegate userInfoDidChange:(TXUserInfo*)userInfo info:(NSDictionary*)info;
-/*融云用户信息发生改变*/
-- (void)userDataDelegate:(TXUserDataDelegate*)userDataDelegate rongIMUserInfoDidChange:(TXRongIMUserInfo*)rongIMUserInfo info:(NSDictionary*)info;
-
-@interface TXUserDataDelegate : NSObject
-/*代理属性*/
-@property (nonatomic,weak)id <TXUserDataChangeDelegate> delegate;
-@end
-```
 ### 宏定义
 ```
 #import "LogMacros.h"
@@ -564,6 +426,29 @@ typedef void (^TXTimerFired) (void);
 /*计算整个缓存目录大小*/
 + (float)folderSizeAtPath;
 ```
+
+### 其他：
+#### UINavigationController+Cloudox 
+```
+UINavigationController+Cloudox
+ /*设置导航栏背景透明度*/
+- (void)setNeedsNavigationBackground:(CGFloat)alpha;
+--------
+```
+
+#### UIButton+Layout
+```
+@property(nonatomic,assign)CGRect titleRect;
+@property(nonatomic,assign)CGRect imageRect;
+```
+
+####  UIImageView+TXKit 1
+```
+/** 使用 CAShapeLayer 和 UIBezierPath 设置圆角 */
+
+- (void)tx_setBezierPathCornerRadius:(CGFloat)radius;
+```
+
 ### ui
 ```
 
