@@ -29,19 +29,33 @@ acct<blob>=0xE7A9BAE781B5E699BAE883BD, 393992811@qq.com
 
 CoreSupportLib is available under the MIT license. See the LICENSE file for more info.
 ## 说明
+
  推荐使用
+ 
  * [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
  * [NSBundle+txSubBundle UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle-UIImagetxSubBundle)
  * [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
  * [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
- * [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
  * [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
  * [UIImage+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageTXKit)
  * [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
  * [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
+ * [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
+ * [TXRouter](https://github.com/sunzhenglin/CoreSupportLib#TXRouter) 
+ * [TXTimer](https://github.com/sunzhenglin/CoreSupportLib#TXTimer) 
+ * [TXCleanCache](https://github.com/sunzhenglin/CoreSupportLib#TXCleanCache) 
+  * [宏定义](https://github.com/sunzhenglin/CoreSupportLib#宏定义) 
+ 
  其他
  
+  * [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
+  * [UIImageView+TXKit 1](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit-1)
+  * [UINavigationController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UINavigationControllerTXKit)
+  * [UITabBarController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITabBarControllerTXKit) 
+  * [UIViewController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerTXKit)
+  
 ### 推荐使用
+
 #### NSString+TXKit
  
 ```
@@ -289,71 +303,17 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 + (UIColor*)gradientFromColor:(UIColor*)fromColor toColor:(UIColor*)toColor withHeight:(CGFloat)height;
 ```
 
-### UIViewController+Cloudox
+#### UIViewController+Cloudox
 ```
  /*设置导航栏背景透明度*/
 @property (copy, nonatomic) NSString * navigationAlpha;
 ```
-###  UINavigationController+TXKit
-```
 
-/* 设置标题字体大小等
- * @param titleSize 标题字体大小
- * @param titleFontName 标题字体名称
- * @param titleColor 标题颜色
- * @param backgroundColor 背景颜色
- * @param barStyle 状态栏类型
- * 注意: 设置barStyle时要在Info.plist中添加"View controller-based status bar appearance"为YES。
- */
-- (void)setTitleSize:(CGFloat)size
-       titleFontName:(NSString *)fontName
-          titleColor:(UIColor*)titleColor
-     backgroundColor:(UIColor*)backgroundColor
-            barStyle:(UIBarStyle)barStyle;
-```
-### UITabBarController+TXKit
-```
-/* 设置TabBarItem
- * @param tabbarItem tabbarItem
- * @param title 标题
- * @param titleSize 标题字体大小
- * @param titleFontName 标题字体名称
- * @param selectedImage 选中图标
- * @param selectedTitleColor 选中字体颜色
- * @param normalImage 未选中图标
- * @param normalTitleColor 未选中字体颜色
- */
-- (void)setTabBarItem:(UITabBarItem *)tabbarItem
-                title:(NSString *)title
-            titleSize:(CGFloat)size
-        titleFontName:(NSString *)fontName
-        selectedImage:(NSString *)selectedImage
-   selectedTitleColor:(UIColor *)selectColor
-          normalImage:(NSString *)unselectedImage
-     normalTitleColor:(UIColor *)unselectColor;
 
-/*设置TabBar背景颜色*/
-- (void)setTabBarBackgroundColor:(UIColor*)backgroundColor;
-```
-### UIViewController+TXKit
-```
-/**  获取状态栏高度 */
-- (CGFloat)statusBarHeight;
-/** 获取导航栏+状态栏的高度 */
-- (CGFloat)navigationBarHeight;
-/**  获取TabBar高度 */
-- (CGFloat)tabBarHeight;
-```
 
-### 宏定义
-```
-#import "LogMacros.h"
-#import "SystenMacros.h"
-#import "UIKitMacros.h"
-#import "OtherMacros.h"
-```
 
-### TXRouter
+
+#### TXRouter
 ```
 
 /** 路由管理器 */
@@ -390,7 +350,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
  */
 + (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters;
 ```
-### TXTimer
+#### TXTimer
 ```
 /** 定时发送 */
 typedef void (^TXTimerFired) (void);
@@ -419,12 +379,19 @@ typedef void (^TXTimerFired) (void);
 - (void)stop;
 
 ```
-### TXCleanCache
+#### TXCleanCache
 ```
 /*清理缓存*/
 + (void)cleanCache:(TXCleanCacheCompletionHandler)completionHandler;
 /*计算整个缓存目录大小*/
 + (float)folderSizeAtPath;
+```
+#### 宏定义
+```
+#import "LogMacros.h"
+#import "SystenMacros.h"
+#import "UIKitMacros.h"
+#import "OtherMacros.h"
 ```
 
 ### 其他：
@@ -448,14 +415,56 @@ UINavigationController+Cloudox
 
 - (void)tx_setBezierPathCornerRadius:(CGFloat)radius;
 ```
-
-### ui
+####  UINavigationController+TXKit
 ```
 
-#import "WSDatePickerView.h" 时间选择器
-#import "TXPassWordView.h" 密码输入框
-#import "TXUseRuleView.h" 使用说明,用户守则
-#import "TXLBXScan.h" 二维码扫描
-#import "CWCarouselHeader.h" 轮播图
-#import "YBPopupMenu.h" 仿微信弹出框
+/* 设置标题字体大小等
+ * @param titleSize 标题字体大小
+ * @param titleFontName 标题字体名称
+ * @param titleColor 标题颜色
+ * @param backgroundColor 背景颜色
+ * @param barStyle 状态栏类型
+ * 注意: 设置barStyle时要在Info.plist中添加"View controller-based status bar appearance"为YES。
+ */
+- (void)setTitleSize:(CGFloat)size
+       titleFontName:(NSString *)fontName
+          titleColor:(UIColor*)titleColor
+     backgroundColor:(UIColor*)backgroundColor
+            barStyle:(UIBarStyle)barStyle;
+```
+#### UITabBarController+TXKit
+```
+/* 设置TabBarItem
+ * @param tabbarItem tabbarItem
+ * @param title 标题
+ * @param titleSize 标题字体大小
+ * @param titleFontName 标题字体名称
+ * @param selectedImage 选中图标
+ * @param selectedTitleColor 选中字体颜色
+ * @param normalImage 未选中图标
+ * @param normalTitleColor 未选中字体颜色
+ */
+- (void)setTabBarItem:(UITabBarItem *)tabbarItem
+                title:(NSString *)title
+            titleSize:(CGFloat)size
+        titleFontName:(NSString *)fontName
+        selectedImage:(NSString *)selectedImage
+   selectedTitleColor:(UIColor *)selectColor
+          normalImage:(NSString *)unselectedImage
+     normalTitleColor:(UIColor *)unselectColor;
+
+/*设置TabBar背景颜色*/
+- (void)setTabBarBackgroundColor:(UIColor*)backgroundColor;
+```
+
+#### UIViewController+TXKit
+```
+/**  获取状态栏高度 */
+- (CGFloat)statusBarHeight;
+/** 获取导航栏+状态栏的高度 */
+- (CGFloat)navigationBarHeight;
+/**  获取TabBar高度 */
+- (CGFloat)tabBarHeight;
+```
+
 ```
