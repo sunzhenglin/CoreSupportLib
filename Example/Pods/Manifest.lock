@@ -1,38 +1,26 @@
 PODS:
-  - CoreSupportLib (1.3.8.4):
-    - LBXScan (~> 2.3)
+  - CoreSupportLib (1.4.1):
     - TXAdapter (~> 0.0.2)
     - TXModel (~> 1.0.1)
-  - LBXScan (2.3):
-    - LBXScan/All (= 2.3)
-  - LBXScan/All (2.3):
-    - LBXScan/Types (~> 2.2)
-    - ZBarSDK (~> 1.3.1)
-  - LBXScan/Types (2.3)
   - TXAdapter (0.0.2)
   - TXModel (1.0.1)
-  - ZBarSDK (1.3.1)
 
 DEPENDENCIES:
   - CoreSupportLib (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - LBXScan
     - TXAdapter
     - TXModel
-    - ZBarSDK
 
 EXTERNAL SOURCES:
   CoreSupportLib:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreSupportLib: 39626d61a6ef46d38658425546fa25e918856074
-  LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
+  CoreSupportLib: 24affd5f43405e110ac4afba54a2a6c405e9770e
   TXAdapter: 6b6681d96c9656ae63b4e1e9b6990f73a027f0fe
   TXModel: 116bca2566ae582e273af09448af4a617b1bf050
-  ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
 PODFILE CHECKSUM: 589dd98516edeedf3f8ccf18e06f7d8ab92c9749
 

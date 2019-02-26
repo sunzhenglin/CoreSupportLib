@@ -1,1 +1,0 @@
-../../../../../CoreSupportLib/Classes/CoreTool/TXImageCompressor/TXImageCompressor.h

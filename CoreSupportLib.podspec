@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreSupportLib'
-  s.version          = '1.4.0'
+  s.version          = '1.4.1'
   s.summary          = 'A short description of CoreSupportLib.'
 
 # This description is used to generate tags and improve search results.
@@ -32,13 +32,13 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CoreSupportLib/Classes/**/*.{h,m}'
   
-   s.resource_bundles = {
-     'CoreSupportLib' => ['CoreSupportLib/Classes/**/*.{png,xib}']
-   }
- 
-    s.dependency 'LBXScan', '~> 2.3'
-    s.dependency 'TXAdapter', '~> 0.0.2'
-    s.dependency 'TXModel', '~> 1.0.1'
+#   s.resource_bundles = {
+#     'CoreSupportLib' => ['CoreSupportLib/Classes/**/*.{png,xib}']
+#   }
+
+#    s.dependency 'LBXScan', '~> 2.3'
+#    s.dependency 'TXAdapter', '~> 0.0.2'
+#    s.dependency 'TXModel', '~> 1.0.1'
  
       
           

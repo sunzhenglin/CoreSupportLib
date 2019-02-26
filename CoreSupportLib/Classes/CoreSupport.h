@@ -12,8 +12,7 @@
 #import "CoreCategoryConfig.h"
 #import "CoreMacrosConfig.h"
 #import "CoreRouterConfig.h"
-#import "CoreUIKitConfig.h"
 #import "CoreToolConfig.h"
-#import "CoreDataConfig.h"
+
 
 #endif /* CoreSupport_h */
