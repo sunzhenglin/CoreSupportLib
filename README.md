@@ -33,8 +33,8 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 * [CoreSupportLib/TXRouter](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibTXRouter) 
 
  * [CoreSupportLib/CoreBundle](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreBundle) 
- ** [NSBundle+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle)
- ** [UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#UIImagetxSubBundle)
+ - [NSBundle+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle)
+ - [UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#UIImagetxSubBundle)
  * [CoreSupportLib/CoreCategory](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreCategory) 
 
  推荐使用
