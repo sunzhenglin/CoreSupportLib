@@ -30,10 +30,13 @@ acct<blob>=0xE7A9BAE781B5E699BAE883BD, 393992811@qq.com
 CoreSupportLib is available under the MIT license. See the LICENSE file for more info.
 ## 说明
 
+[*CoreSupportLib/TXRouter](https://github.com/sunzhenglin/CoreSupportLib#TXRouter) 
+ [*CoreSupportLib/CoreBundle]
+ * [*NSBundle+txSubBundle UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle-UIImagetxSubBundle)
  推荐使用
  
  * [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
- * [*NSBundle+txSubBundle UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle-UIImagetxSubBundle)
+
  * [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
  * [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
  * [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
@@ -41,7 +44,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
  * [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
  * [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
  * [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
- * [*TXRouter](https://github.com/sunzhenglin/CoreSupportLib#TXRouter) 
+ * 
  * [TXTimer](https://github.com/sunzhenglin/CoreSupportLib#TXTimer) 
  * [TXCleanCache](https://github.com/sunzhenglin/CoreSupportLib#TXCleanCache) 
   * [宏定义](https://github.com/sunzhenglin/CoreSupportLib#宏定义) 
@@ -54,7 +57,62 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
   * [UITabBarController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITabBarControllerTXKit) 
   * [UIViewController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerTXKit)
   
-### 推荐使用
+### CoreSupportLib/TXRouter
+
+ 
+```
+
+/** 路由管理器 */
++ (TXRouter *)router;
+
+/**
+ * 创建对象
+ * @param className 类名字
+ */
++ (id)createObjectWithClassName:(NSString *)className;
+
+/**
+ * 创建对象
+ * @param className 类名字
+ * @param parameters 传递的参数
+ * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
+ */
++ (id)createObjectWithClassName:(NSString *)className parameters:(NSDictionary*)parameters;
+
+/**
+ * 打开视图控制器
+ * @param vCName VC类名字
+ * @param parameters 传递的参数
+ * @param completionHandler 完成处理
+ * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
+ */
++ (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters completionHandler:(void (^) (void))completionHandler;
+
+/**
+ * 打开视图控制器
+ * @param vCName VC类名字
+ * @param parameters 传递的参数
+ * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
+ */
++ (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters;
+```
+
+### CoreSupportLib/CoreBundle
+
+#### NSBundle+txSubBundle 
+ ```
+ //服务于组件化的xib等资源的获取
+ +(instancetype)tx_subBundleWithBundleName:(NSString *)bundleName targetClass:(Class)targetClass;
+  ```
+####  UIImage+txSubBundle 
+ ```
+  //服务于组件化的图片等资源的获取
+ + (instancetype)tx_imgWithName:(NSString *)name bundle:(NSString *)bundleName targetClass:(Class)targetClass;
+ ```
+
+### CoreSupportLib/CoreCategory
+
+推荐
 
 #### NSString+TXKit
  
@@ -147,15 +205,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 /** 隐藏证件号指定位数字（如：360723********6341） */
 - (nullable NSString *)tx_hideCharacters:(NSUInteger)location length:(NSUInteger)length;
 ```
- ### NSBundle+txSubBundle UIImage+txSubBundle 
- ```
- //服务于组件化的xib等资源的获取
- +(instancetype)tx_subBundleWithBundleName:(NSString *)bundleName targetClass:(Class)targetClass;
  
- ---
-  //服务于组件化的图片等资源的获取
- + (instancetype)tx_imgWithName:(NSString *)name bundle:(NSString *)bundleName targetClass:(Class)targetClass;
- ```
  
 
 #### UITextView+TXKit UITextField+TXKit
@@ -309,92 +359,8 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 @property (copy, nonatomic) NSString * navigationAlpha;
 ```
 
+其他：
 
-
-
-
-#### TXRouter
-```
-
-/** 路由管理器 */
-+ (TXRouter *)router;
-
-/**
- * 创建对象
- * @param className 类名字
- */
-+ (id)createObjectWithClassName:(NSString *)className;
-
-/**
- * 创建对象
- * @param className 类名字
- * @param parameters 传递的参数
- * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
- */
-+ (id)createObjectWithClassName:(NSString *)className parameters:(NSDictionary*)parameters;
-
-/**
- * 打开视图控制器
- * @param vCName VC类名字
- * @param parameters 传递的参数
- * @param completionHandler 完成处理
- * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
- */
-+ (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters completionHandler:(void (^) (void))completionHandler;
-
-/**
- * 打开视图控制器
- * @param vCName VC类名字
- * @param parameters 传递的参数
- * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
- */
-+ (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters;
-```
-#### TXTimer
-```
-/** 定时发送 */
-typedef void (^TXTimerFired) (void);
-
-/** 定时器 */
-@interface TXTimer : NSObject
-/** 定时发送代码块 */
-@property (nonatomic,copy)TXTimerFired timerFired;
-/** 定时发送时间 */
-@property (nonatomic,assign)NSTimeInterval timeInterval;
-
-/** 对象方法(构造初始化)
- *  @param timeInterval 时间
- */
-- (instancetype)initWithTimeInterval:(NSTimeInterval)timeInterval;
-
-/** 类方法(构造初始化)
- *  @param timeInterval 时间
- */
-+ (instancetype)timerWithTimeInterval:(NSTimeInterval)timeInterval;
-
-/** 开始倒计时 */
--(void)start;
-
-/** 停止倒计时 */
-- (void)stop;
-
-```
-#### TXCleanCache
-```
-/*清理缓存*/
-+ (void)cleanCache:(TXCleanCacheCompletionHandler)completionHandler;
-/*计算整个缓存目录大小*/
-+ (float)folderSizeAtPath;
-```
-#### 宏定义
-```
-#import "LogMacros.h"
-#import "SystenMacros.h"
-#import "UIKitMacros.h"
-#import "OtherMacros.h"
-```
-
-### 其他：
 #### UINavigationController+Cloudox 
 ```
 UINavigationController+Cloudox
@@ -466,5 +432,71 @@ UINavigationController+Cloudox
 /**  获取TabBar高度 */
 - (CGFloat)tabBarHeight;
 ```
+ 
+### CoreSupportLib/CoreMacros
 
+####  LogMacros
+```
+ /*DEBUG打印日志*/
+#if DEBUG
+#define TXLog(s, ... ) NSLog( @"<FileName:%@ InThe:%dRow> Log:%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define TXLog(s, ... )
+#endif
+```
+#### SystemMacros
+```
+/** 当前版本系统版本(float) */
+#define CURRENT_SYSTEM_VERSION_FLOAT ([[[UIDevice currentDevice] systemVersion] floatValue])
+/** 当前版本系统版本(double) */
+#define CURRENT_SYSTEM_VERSION_DOUBLE ([[[UIDevice currentDevice] systemVersion] doubleValue])
+/** 当前版本系统版本 */
+#define CURRENT_SYSTEM_VERSION ([[UIDevice currentDevice] systemVersion])
+/** 当前App版本 */
+#define CURRENT_APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+/** 当前App版本(build) */
+#define CURRENT_APP_BUILD [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+/** 当前App名称 */
+#define CURRENT_APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+/** 手机序列号 */
+#define IDENTIFIER_NUMBER [[UIDevice currentDevice] uniqueIdentifier]
+/** 手机别名 */
+#define USER_PHONE_NAME [[UIDevice currentDevice] name]
+/** 手机别名 */
+#define PHONE_MODEL [[UIDevice currentDevice] model]
+/** 当前语言 */
+#define CURRENT_LANGUAGE ([[NSLocale preferredLanguages] objectAtIndex:0])
+/** 当前屏幕宽 */
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+/** 当前屏幕高 */
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+/** 获取导航栏+状态栏的高度 */
+#define NAVIGATIONBAR_STATUSBAR_HEIGHT self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
+/** TabBar高度 */
+#define TABBAR_HEIGHT self.tabBarController.tabBar.frame.size.height
+/** 状态栏高度 */
+#define TX_STATUSBAR_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 44.0f : 20.0f)
+/** 获取导航栏+状态栏的高度 */
+#define TX_NAVIGATIONBAR_STATUSBAR_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 88.0f : 64.0f)
+/** TabBar高度 */
+#define TX_TABBAR_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 83.0f : 49.0f)
+/** 顶部安全区域远离高度 */
+#define TX_TOP_SAFE_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 44.0f : 0.0f)
+/** 底部安全区域远离高度*/
+#define TX_BOTTOM_SAFE_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 34.0f : 0.0f)
+/*iPhoneX、XS、XSMax、XR的状态栏高度差值*/
+#define TX_TOP_DIFFERENCE_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 24.0f : 0.0f)
+/** 是否是iPhone3GS_4_4S */
+#define IPHONE3GS_4_4S (SCREEN_WIDTH == 320.0f && SCREEN_HEIGHT == 480.0f ? YES : NO)
+/** 是否是iPhone5_5C_5S_5SE */
+#define IPHONE5_5C_5S_5SE (SCREEN_WIDTH == 320.0f && SCREEN_HEIGHT == 568.0f ? YES : NO)
+/** 是否是iPhone6_6S_7_8 */
+#define IPHONE6_6S_7_8 (SCREEN_WIDTH== 375.0f && SCREEN_HEIGHT == 667.0f ? YES : NO)
+/** 是否是iPhone6Plus_6SPlus_7Plus_8Plus */
+#define IPHONE6PLUS_6SPLUS_7PLUS_8PLUS (SCREEN_WIDTH == 414.0f && SCREEN_HEIGHT == 736.0f ? YES: NO)
+/** 是否是iPhoneX_XS */
+#define IPHONEX_XS (SCREEN_WIDTH == 375.0f && SCREEN_HEIGHT == 812.0f ? YES : NO)
+/** 是否是iPhoneXSMax_XR */
+#define IPHONEXSMAX_XR (SCREEN_WIDTH == 414.0f && SCREEN_HEIGHT == 896.0f ? YES : NO)```
+ 
 ```
