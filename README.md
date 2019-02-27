@@ -37,7 +37,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
      2. [UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#UIImagetxSubBundle)
  * [CoreSupportLib/CoreCategory](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreCategory) 
 
-     0.推荐使用
+     -.推荐使用
      1. [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
      2. [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
      3. [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
@@ -48,7 +48,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
      8. [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
  
  
-     0.其他
+     -.其他
      1. [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
      2. [UIImageView+TXKit 1](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit-1)
      3. [UINavigationController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UINavigationControllerTXKit)
