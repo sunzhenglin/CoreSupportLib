@@ -30,35 +30,33 @@ acct<blob>=0xE7A9BAE781B5E699BAE883BD, 393992811@qq.com
 CoreSupportLib is available under the MIT license. See the LICENSE file for more info.
 ## 说明
 
-* [CoreSupportLib/TXRouter](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibTXRouter) 
+ * [CoreSupportLib/TXRouter](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibTXRouter) 
 
  * [CoreSupportLib/CoreBundle](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreBundle) 
      1. [NSBundle+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle)
      2. [UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#UIImagetxSubBundle)
  * [CoreSupportLib/CoreCategory](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreCategory) 
 
- -- 推荐使用
+     0.推荐使用
+     1. [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
+     2. [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
+     3. [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
+     4. [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
+     5. [UIImage+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageTXKit)
+     6. [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
+     7. [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
+     8. [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
  
-   1. [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
-   2. [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
-   3. [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
-   4. [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
-   5. [UIImage+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageTXKit)
-   6. [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
-   7. [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
-   8. [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
  
- 
--- 其他
- 
-   1. [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
-   2. [UIImageView+TXKit 1](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit-1)
-   3. [UINavigationController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UINavigationControllerTXKit)
-   4. [UITabBarController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITabBarControllerTXKit) 
-   5. [UIViewController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerTXKit)
+     0.其他
+     1. [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
+     2. [UIImageView+TXKit 1](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit-1)
+     3. [UINavigationController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UINavigationControllerTXKit)
+     4. [UITabBarController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITabBarControllerTXKit) 
+     5. [UIViewController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerTXKit)
  * [CoreSupportLib/CoreMacros](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreMacros) 
-   1. [LogMacros](https://github.com/sunzhenglin/CoreSupportLib#LogMacros) 
-   2. [SystemMacros](https://github.com/sunzhenglin/CoreSupportLib#SystemMacros)
+     1. [LogMacros](https://github.com/sunzhenglin/CoreSupportLib#LogMacros) 
+     2. [SystemMacros](https://github.com/sunzhenglin/CoreSupportLib#SystemMacros)
 
 ### CoreSupportLib/TXRouter
 
