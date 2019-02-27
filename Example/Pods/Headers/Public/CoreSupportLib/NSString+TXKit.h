@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/Foundation/NSString+TXKit.h
+../../../../../CoreSupportLib/Classes/CoreCategory/NSString+TXKit.h

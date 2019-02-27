@@ -30,17 +30,35 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CoreSupportLib/Classes/**/*.{h,m}'
-  
-#   s.resource_bundles = {
-#     'CoreSupportLib' => ['CoreSupportLib/Classes/**/*.{png,xib}']
-#   }
-
-#    s.dependency 'LBXScan', '~> 2.3'
-#    s.dependency 'TXAdapter', '~> 0.0.2'
-#    s.dependency 'TXModel', '~> 1.0.1'
  
-      
+ 
+ s.public_header_files = 'CoreSupportLib/Classes/CoreSupport.h'
+ s.source_files = 'CoreSupportLib/Classes/CoreSupport.h'
+ 
+ s.subspec 'CoreBundle' do |ss|
+   #'CoreBundle'
+   ss.public_header_files = 'CoreSupportLib/Classes/CoreBundle/**/*.h'
+   ss.source_files = 'CoreSupportLib/Classes/CoreBundle/**/*.{h,m}'
+   
+ end
+ s.subspec 'CoreCategory' do |ss|
+   #'CoreCategory'
+   ss.public_header_files = 'CoreSupportLib/Classes/CoreCategory/**/*.h'
+   ss.source_files = 'CoreSupportLib/Classes/CoreCategory/**/*.{h,m}'
+   
+ end
+ s.subspec 'CoreMacros' do |ss|
+   #'CoreMacros'
+   ss.public_header_files = 'CoreSupportLib/Classes/CoreMacros/**/*.h'
+   ss.source_files = 'CoreSupportLib/Classes/CoreMacros/**/*.{h,m}'
+   
+ end
+ s.subspec 'CoreRouter' do |ss|
+   #'CoreRouter'
+   ss.public_header_files = 'CoreSupportLib/Classes/CoreRouter/**/*.h'
+   ss.source_files = 'CoreSupportLib/Classes/CoreRouter/**/*.{h,m}'
+   
+ end
           
               
                   

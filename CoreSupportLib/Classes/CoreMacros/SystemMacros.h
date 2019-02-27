@@ -32,6 +32,22 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 /** 当前屏幕高 */
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+/** 获取导航栏+状态栏的高度 */
+#define NAVIGATIONBAR_STATUSBAR_HEIGHT self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
+/** TabBar高度 */
+#define TABBAR_HEIGHT self.tabBarController.tabBar.frame.size.height
+/** 状态栏高度 */
+#define TX_STATUSBAR_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 44.0f : 20.0f)
+/** 获取导航栏+状态栏的高度 */
+#define TX_NAVIGATIONBAR_STATUSBAR_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 88.0f : 64.0f)
+/** TabBar高度 */
+#define TX_TABBAR_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 83.0f : 49.0f)
+/** 顶部安全区域远离高度 */
+#define TX_TOP_SAFE_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 44.0f : 0.0f)
+/** 底部安全区域远离高度*/
+#define TX_BOTTOM_SAFE_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 34.0f : 0.0f)
+/*iPhoneX、XS、XSMax、XR的状态栏高度差值*/
+#define TX_TOP_DIFFERENCE_HEIGHT (IPHONEX_XS || IPHONEXSMAX_XR ? 24.0f : 0.0f)
 /** 是否是iPhone3GS_4_4S */
 #define IPHONE3GS_4_4S (SCREEN_WIDTH == 320.0f && SCREEN_HEIGHT == 480.0f ? YES : NO)
 /** 是否是iPhone5_5C_5S_5SE */

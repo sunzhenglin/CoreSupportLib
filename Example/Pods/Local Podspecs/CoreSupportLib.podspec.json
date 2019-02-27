@@ -18,13 +18,28 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CoreSupportLib/Classes/**/*.{h,m}",
-  "dependencies": {
-    "TXAdapter": [
-      "~> 0.0.2"
-    ],
-    "TXModel": [
-      "~> 1.0.1"
-    ]
-  }
+  "public_header_files": "CoreSupportLib/Classes/CoreSupport.h",
+  "source_files": "CoreSupportLib/Classes/CoreSupport.h",
+  "subspecs": [
+    {
+      "name": "CoreBundle",
+      "public_header_files": "CoreSupportLib/Classes/CoreBundle/**/*.h",
+      "source_files": "CoreSupportLib/Classes/CoreBundle/**/*.{h,m}"
+    },
+    {
+      "name": "CoreCategory",
+      "public_header_files": "CoreSupportLib/Classes/CoreCategory/**/*.h",
+      "source_files": "CoreSupportLib/Classes/CoreCategory/**/*.{h,m}"
+    },
+    {
+      "name": "CoreMacros",
+      "public_header_files": "CoreSupportLib/Classes/CoreMacros/**/*.h",
+      "source_files": "CoreSupportLib/Classes/CoreMacros/**/*.{h,m}"
+    },
+    {
+      "name": "CoreRouter",
+      "public_header_files": "CoreSupportLib/Classes/CoreRouter/**/*.h",
+      "source_files": "CoreSupportLib/Classes/CoreRouter/**/*.{h,m}"
+    }
+  ]
 }

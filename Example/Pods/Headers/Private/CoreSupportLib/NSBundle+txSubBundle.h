@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/Foundation/NSBundle+txSubBundle.h
+../../../../../CoreSupportLib/Classes/CoreBundle/NSBundle+txSubBundle.h

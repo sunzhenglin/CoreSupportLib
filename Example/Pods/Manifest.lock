@@ -1,27 +1,24 @@
 PODS:
   - CoreSupportLib (1.4.1):
-    - TXAdapter (~> 0.0.2)
-    - TXModel (~> 1.0.1)
-  - TXAdapter (0.0.2)
-  - TXModel (1.0.1)
+    - CoreSupportLib/CoreBundle (= 1.4.1)
+    - CoreSupportLib/CoreCategory (= 1.4.1)
+    - CoreSupportLib/CoreMacros (= 1.4.1)
+    - CoreSupportLib/CoreRouter (= 1.4.1)
+  - CoreSupportLib/CoreBundle (1.4.1)
+  - CoreSupportLib/CoreCategory (1.4.1)
+  - CoreSupportLib/CoreMacros (1.4.1)
+  - CoreSupportLib/CoreRouter (1.4.1)
 
 DEPENDENCIES:
   - CoreSupportLib (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - TXAdapter
-    - TXModel
 
 EXTERNAL SOURCES:
   CoreSupportLib:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreSupportLib: 24affd5f43405e110ac4afba54a2a6c405e9770e
-  TXAdapter: 6b6681d96c9656ae63b4e1e9b6990f73a027f0fe
-  TXModel: 116bca2566ae582e273af09448af4a617b1bf050
+  CoreSupportLib: 6fef73a953487504ef568cb3bb22b58acda8395d
 
 PODFILE CHECKSUM: 589dd98516edeedf3f8ccf18e06f7d8ab92c9749
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.6.1

@@ -1,7 +1,7 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CoreSupportLib" "${PODS_ROOT}/Headers/Public/TXAdapter" "${PODS_ROOT}/Headers/Public/TXModel"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CoreSupportLib" "${PODS_CONFIGURATION_BUILD_DIR}/TXAdapter" "${PODS_CONFIGURATION_BUILD_DIR}/TXModel"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"CoreSupportLib" -l"TXAdapter" -l"TXModel"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CoreSupportLib"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CoreSupportLib"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CoreSupportLib"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

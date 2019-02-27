@@ -9,7 +9,6 @@
 #ifndef CoreMacrosConfig_h
 #define CoreMacrosConfig_h
 #import "LogMacros.h"
-#import "SystenMacros.h"
-#import "UIKitMacros.h"
-#import "OtherMacros.h"
+#import "SystemMacros.h"
+ 
 #endif /* CoreMacrosConfig_h */

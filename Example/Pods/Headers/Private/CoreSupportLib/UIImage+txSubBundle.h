@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UIImage+txSubBundle.h
+../../../../../CoreSupportLib/Classes/CoreBundle/UIImage+txSubBundle.h

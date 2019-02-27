@@ -1,1 +1,1 @@
-../../../../../CoreSupportLib/Classes/CoreCategory/UIKit/UITextView+TXKit.h
+../../../../../CoreSupportLib/Classes/CoreCategory/UITextView+TXKit.h
