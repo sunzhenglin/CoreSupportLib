@@ -8,12 +8,25 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@protocol KitPassValueDelegate <NSObject>
 
+/**
+ *  @Description 模块返回传值
+ *  @param kitName 模块名字
+ *  @param objc 返回值
+ */
+- (void)passFrom:(NSString *)kitName value:(id)objc;
+
+
+@end
 /*参数*/
 FOUNDATION_EXPORT NSString * const viewControllerKey;
 
 /** 路由 */
 @interface TXRouter : NSObject
+
+
+@property (nonatomic,copy)id<KitPassValueDelegate> delegate;
 
 /** 路由管理器 */
 + (TXRouter *)router;
@@ -49,4 +62,7 @@ FOUNDATION_EXPORT NSString * const viewControllerKey;
  */
 + (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters;
 
+
+
+- (void)passFrom:(NSString *)kitName value:(id)objc;
 @end

@@ -94,4 +94,7 @@ NSString * const viewControllerKey=@"viewController";
     [self openVC:vCName parameters:parameters completionHandler:nil];
 }
 
+- (void)passFrom:(NSString *)kitName value:(id)objc{
+    [self.delegate passFrom:kitName value:objc];
+}
 @end
