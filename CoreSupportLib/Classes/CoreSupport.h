@@ -10,11 +10,8 @@
 #define CoreSupport_h
 
 #import "CoreCategoryConfig.h"
-
 #import "CoreMacrosConfig.h"
-
 #import "TXRouter.h"
-
 #import "NSBundle+txSubBundle.h"
 #import "UIImage+txSubBundle.h"
 

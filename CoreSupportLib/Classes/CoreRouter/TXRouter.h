@@ -26,7 +26,7 @@ FOUNDATION_EXPORT NSString * const viewControllerKey;
 @interface TXRouter : NSObject
 
 
-@property (nonatomic,copy)id<KitPassValueDelegate> delegate;
+@property (nonatomic,strong)id<KitPassValueDelegate> delegate;
 
 /** 路由管理器 */
 + (TXRouter *)router;
