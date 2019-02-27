@@ -30,37 +30,59 @@ acct<blob>=0xE7A9BAE781B5E699BAE883BD, 393992811@qq.com
 CoreSupportLib is available under the MIT license. See the LICENSE file for more info.
 ## 说明
 
-[*CoreSupportLib/TXRouter](https://github.com/sunzhenglin/CoreSupportLib#TXRouter) 
- [*CoreSupportLib/CoreBundle]
- * [*NSBundle+txSubBundle UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle-UIImagetxSubBundle)
+* [CoreSupportLib/TXRouter](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibTXRouter) 
+
+ * [CoreSupportLib/CoreBundle](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreBundle) 
+ ** [NSBundle+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#NSBundletxSubBundle)
+ ** [UIImage+txSubBundle](https://github.com/sunzhenglin/CoreSupportLib#UIImagetxSubBundle)
+ * [CoreSupportLib/CoreCategory](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreCategory) 
+
  推荐使用
  
- * [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
-
- * [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
- * [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
- * [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
- * [UIImage+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageTXKit)
- * [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
- * [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
- * [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
- * 
- * [TXTimer](https://github.com/sunzhenglin/CoreSupportLib#TXTimer) 
- * [TXCleanCache](https://github.com/sunzhenglin/CoreSupportLib#TXCleanCache) 
-  * [宏定义](https://github.com/sunzhenglin/CoreSupportLib#宏定义) 
+  ** [NSString+TXKit](https://github.com/sunzhenglin/CoreSupportLib#nsstringtxkit)
+  ** [UITextView+TXKit UITextField+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITextViewTXKit-UITextFieldTXKit)
+  ** [UIButton+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIButtonTXKit)
+  ** [UIImageView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit)
+  ** [UIImage+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIImageTXKit)
+  ** [UIView+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewTXKit)
+  ** [UIColor+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIColorTXKit)
+  ** [UIViewController+Cloudox](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerCloudox) 设置导航栏背景透明度
+ 
  
  其他
  
-  * [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
-  * [UIImageView+TXKit 1](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit-1)
-  * [UINavigationController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UINavigationControllerTXKit)
-  * [UITabBarController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITabBarControllerTXKit) 
-  * [UIViewController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerTXKit)
-  
+   ** [UIButton+Layout](https://github.com/sunzhenglin/CoreSupportLib#UIButtonLayout)
+   ** [UIImageView+TXKit 1](https://github.com/sunzhenglin/CoreSupportLib#UIImageViewTXKit-1)
+   ** [UINavigationController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UINavigationControllerTXKit)
+   ** [UITabBarController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UITabBarControllerTXKit) 
+   ** [UIViewController+TXKit](https://github.com/sunzhenglin/CoreSupportLib#UIViewControllerTXKit)
+ * [CoreSupportLib/CoreMacros](https://github.com/sunzhenglin/CoreSupportLib#CoreSupportLibCoreMacros) 
+   ** [LogMacros](https://github.com/sunzhenglin/CoreSupportLib#LogMacros) 
+   ** [SystemMacros](https://github.com/sunzhenglin/CoreSupportLib#SystemMacros)
+
 ### CoreSupportLib/TXRouter
 
  
 ```
+protocol KitPassValueDelegate <NSObject>
+
+/**
+ *  @Description 模块返回传值
+ *  @param kitName 模块名字
+ *  @param objc 返回值
+ */
+- (void)passFrom:(NSString *)kitName value:(id)objc;
+
+
+@end
+/*参数*/
+FOUNDATION_EXPORT NSString * const viewControllerKey;
+
+/** 路由 */
+@interface TXRouter : NSObject
+
+
+@property (nonatomic,copy)id<KitPassValueDelegate> delegate;
 
 /** 路由管理器 */
 + (TXRouter *)router;
@@ -95,6 +117,8 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
  * 注意:必须实现"initWithParameters:(NSDictionary*)parameters"该方法
  */
 + (void)openVC:(NSString*)vCName parameters:(NSDictionary*)parameters;
+
+- (void)passFrom:(NSString *)kitName value:(id)objc;
 ```
 
 ### CoreSupportLib/CoreBundle
