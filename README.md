@@ -60,7 +60,7 @@ CoreSupportLib is available under the MIT license. See the LICENSE file for more
 
 ### CoreSupportLib/CoreRouter
 
- TXRouter
+#import "TXRouter.h"
 ```
 protocol KitPassValueDelegate <NSObject>
 
@@ -121,6 +121,9 @@ FOUNDATION_EXPORT NSString * const viewControllerKey;
 
 ### CoreSupportLib/CoreBundle
 
+#import "NSBundle+txSubBundle.h"
+#import "UIImage+txSubBundle.h"
+
 #### NSBundle+txSubBundle 
  ```
  //服务于组件化的xib等资源的获取
@@ -133,6 +136,8 @@ FOUNDATION_EXPORT NSString * const viewControllerKey;
  ```
 
 ### CoreSupportLib/CoreCategory
+
+#import "CoreCategoryConfig.h"
 
 推荐
 
@@ -456,6 +461,8 @@ UINavigationController+Cloudox
 ```
  
 ### CoreSupportLib/CoreMacros
+
+#import "CoreMacrosConfig.h"
 
 ####  LogMacros
 ```
